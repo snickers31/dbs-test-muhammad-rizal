@@ -8,7 +8,7 @@ router.post('/checklist', controller.CreateNewChecklist);
 router.delete('/checklist/:checklistId', controller.DeleteChecklistById);
 router.get('/checklist/:checklistId/item', controller.GetChecklistItemsByChecklistId);
 router.post('/checklist/:checklistId/item', controller.CreateNewChecklistItem);
-router.get('/checklist/:checklistId/item/:checklistItemId', controller.GetChecklistItemsInChecklist);
+router.get('/checklist/:checklistId/item/:checklistItemId', controller.GetChecklistItemsById);
 router.put('/checklist/:checklistId/item/:checklistItemId', controller.UpdateStatusChecklistItemById);
 router.delete('/checklist/:checklistId/item/:checklistItemId', controller.DeleteChecklistItemById);
 router.put('/checklist/:checklistId/item/rename/:checklistItemId', controller.UpdateChecklistItemNameById);
